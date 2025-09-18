@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phoenix - Portfolio</title>
+    <link rel="stylesheet" href="stylish.css" />
+    <script src="jstprfct.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Phoenix
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="email icon" />
+            jdoe@jeemail.com
+          </div>
+
+          <div style="clear: both;"></div>
+
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="phone icon" />
+            +13456764598
+          </div>
+        </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendation</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="profile.jpg" class="profile_image" alt="Phoenix profile" />
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Phoenix! <img src="html_finalprojimages/waving-hand.png" width="60" alt="waving hand" />
+        </h1>
+        <p>
+          I am a secure full stack developer with 4 years of experience in both
+          application and presentation layers and I specialise in the front end
+          part and have a CSE Specialisation in Cybersecurity so I also offer
+          the services of providing security and analysis of security of present
+          systems. I have worked on making fully functional secure systems,
+          applications and microservices deployed on IBM Cloud as well as
+          Google Cloud. I am a fan of using IBM Watson Services and have worked
+          on watsonx.ai, Watson Discovery, watsonx Orchestrate to name a few.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear: both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" alt="HTML5" />
+          <h6>HTML</h6>
+          <p>6 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript" />
+          <h6>JavaScript</h6>
+          <p>6 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png" alt="Java" />
+          <h6>Java</h6>
+          <p>5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" alt="React" />
+          <h6>React</h6>
+          <p>5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" alt="CSS3" />
+          <h6>CSS</h6>
+          <p>6 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" alt="Node.js" />
+          <h6>Node.js</h6>
+          <p>5 years experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both;"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Portfolio Generator</h3>
+          <ul>
+            <li>
+              Built a fully responsive personal portfolio website using HTML,
+              CSS, and JavaScript, showcasing live project previews and
+              animations.
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <div class="project-card">
+          <h3>Student Management System</h3>
+          <ul>
+            <li>
+              Designed and implemented a student management system using Java
+              for backend logic and MySQL for persistent storage, with CRUD
+              operations and role-based access.
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <div class="project-card">
+          <h3>Task Tracker App</h3>
+          <ul>
+            <li>
+              Developed a full-stack task management application using React
+              for the frontend and Node.js with Express for the backend API,
+              featuring user login, task filters, and live updates.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div style="clear: both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both;"></div>
+
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Phoenix has consistently been impressing me with his technical depth
+          and how quickly he troubleshoots issues. He doesn’t just solve
+          problems—he understands them. Solid teammate!
+          <span>&#8221;</span>
+        </div>
+
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Phoenix's ability to see both the micro details and the big-picture
+          flow is rare and just wow. He thinks like a developer AND a leader.
+          Definitely someone I’d just love to team up with again!
+          <span>&#8221;</span>
+        </div>
+
+        <div class="recommendation">
+          <span>&#8220;</span>
+          The balance that you provide for and between communication and
+          execution is absolutely top-tier. I always knew where we stood in the
+          project because of your regular, constructive inputs. Such a big fan
+          of your collaboration style!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /> <br />
+          <textarea id="new_recommendation" cols="60" rows="6" placeholder="Message"></textarea>
+
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="checkmark" />
+      <h3>
+        Thanks a lot for leaving a recommendation! Appreciate it!
+      </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
